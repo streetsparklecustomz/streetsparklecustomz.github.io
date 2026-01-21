@@ -5,45 +5,95 @@
     <title>Street Sparkle Customz</title>
     <style>
         body {
-            background: #0d0d0d;
-            color: #f7e9ff;
-            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #0a0a0a;
+            color: #f2e6ff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ),
+            url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 50px;
+            padding: 0 20px;
         }
-        h1 {
-            font-size: 48px;
-            letter-spacing: 2px;
+
+        .hero h1 {
+            font-size: 60px;
             text-transform: uppercase;
-            color: #ff66cc;
-            text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff33aa;
+            letter-spacing: 3px;
+            color: #ff4fa3;
+            text-shadow: 0 0 15px #ff4fa3, 0 0 30px #ff007f;
         }
-        p {
-            font-size: 20px;
-            max-width: 600px;
-            margin: 20px auto;
+
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+            margin-top: 20px;
             line-height: 1.6;
+            color: #e6d4f7;
         }
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background: #ff33aa;
+
+        .btn {
+            margin-top: 35px;
+            padding: 15px 40px;
+            background: #ff007f;
             color: black;
             font-weight: bold;
             border-radius: 8px;
             text-decoration: none;
-            box-shadow: 0 0 10px #ff33aa;
+            font-size: 18px;
+            box-shadow: 0 0 15px #ff007f;
         }
-        .button:hover {
-            background: #ff66cc;
-            box-shadow: 0 0 15px #ff66cc;
+
+        .btn:hover {
+            background: #ff4fa3;
+            box-shadow: 0 0 25px #ff4fa3;
         }
-    </style>
-</head>
-<body>
-    <h1>Street Sparkle Customz</h1>
-    <p>Custom rhinestoning with chaotic girly street energy. Shoes, clothes, accessories, and anything you can dream of — fully iced out with attitude.</p>
-    <a class="button" href="#">View Gallery</a>
-</body>
-  </html>
+
+        /* SECTION HEADERS */
+        h2 {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 36px;
+            color: #ff4fa3;
+            text-shadow: 0 0 10px #ff4fa3;
+        }
+
+        /* SERVICES SECTION */
+        .services {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-box {
+            background: #111;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255,0,127,0.2);
+            text-align: center;
+        }
+
+        .service-box h3 {
+            color: #ff4fa3;
+            margin-bottom: 10px;
+        }
+
+        .service-box p {
+            color: #d9c6eb;
+            font-size: 16px;
