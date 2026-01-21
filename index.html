@@ -4,7 +4,41 @@
     <meta charset="UTF-8">
     <title>Street Sparkle Customz</title>
     <style>
-        body {
+        /* NAVIGATION BAR */
+.navbar {
+    width: 100%;
+    padding: 20px 40px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0 15px #ff007f;
+}
+
+.nav-logo {
+    color: #ff4fa3;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff007f;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    color: #f2e6ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4fa3;
+    text-shadow: 0 0 10px #ff007f;
+        }body {
             margin: 0;
             background: #0a0a0a;
             color: #f2e6ff;
@@ -145,5 +179,16 @@
         © 2026 Street Sparkle Customz — Dark Glam Rhinestone Studio
     </footer>
 
-</body>
+</body><body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-logo">Street Sparkle Customz</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 </html>
